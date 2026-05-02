@@ -11,13 +11,13 @@ export function ServicesSection() {
       title="Solutions designed to grow your business"
       description="From websites to full-scale applications, I build systems focused on leads, automation, and real business results."
     >
-      <StaggerContainer className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+      <StaggerContainer className="grid gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-3">
 
         {services.map((service) => (
           <StaggerItem
             key={service}
             as="div"
-            className="group relative rounded-xl border border-stone-300 bg-[#fffaf2] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-emerald-900 dark:bg-emerald-950/30"
+            className="group relative min-w-0 rounded-xl border border-stone-300 bg-[#fffaf2] p-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-5 dark:border-emerald-900 dark:bg-emerald-950/30"
           >
 
             {/* ICON */}

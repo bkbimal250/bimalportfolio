@@ -22,7 +22,7 @@ export function ButtonLink({
 
   return (
     <MotionAnchor
-      className={`inline-flex min-h-10 items-center justify-center gap-2 rounded-md px-5 font-extrabold no-underline transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-teal-700/30 ${variants[variant]} ${className}`}
+      className={`inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md px-5 text-sm font-extrabold no-underline transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-teal-700/30 sm:w-auto sm:text-base ${variants[variant]} ${className}`}
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noreferrer' : undefined}

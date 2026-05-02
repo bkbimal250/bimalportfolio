@@ -5,7 +5,7 @@ import { Eyebrow, SectionTitle, sectionClass, Tag } from '../ui/Section'
 export function AboutSection() {
   return (
     <RevealSection
-      className={`${sectionClass} grid gap-12 lg:grid-cols-[minmax(260px,0.9fr)_minmax(280px,1.1fr)]`}
+      className={`${sectionClass} grid gap-8 sm:gap-10 lg:grid-cols-[minmax(260px,0.9fr)_minmax(280px,1.1fr)] lg:gap-12`}
       id="about"
     >
       {/* LEFT */}
@@ -16,27 +16,27 @@ export function AboutSection() {
           I build scalable digital products that solve real business problems.
         </SectionTitle>
 
-        <p className="mt-4 text-sm text-stone-600 dark:text-stone-300">
+        <p className="mt-3 text-sm leading-relaxed text-stone-600 sm:mt-4 dark:text-stone-300">
           From idea to deployment, I focus on building systems that are fast,
           reliable, and designed for growth.
         </p>
       </div>
 
       {/* RIGHT */}
-      <div className="grid gap-8">
+      <div className="grid gap-6 sm:gap-8">
 
         {/* TEXT */}
-        <div className="grid gap-5 text-[15px] leading-relaxed text-stone-600 dark:text-stone-300">
+        <div className="grid gap-4 text-sm leading-relaxed text-stone-600 sm:gap-5 sm:text-[15px] dark:text-stone-300">
           <p>{profile.summary}</p>
 
           {/* 🔥 Highlighted impact */}
-          <div className="rounded-lg border border-emerald-200 bg-emerald-50/60 p-4 text-sm font-medium text-emerald-900 dark:border-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
+          <div className="rounded-lg border border-emerald-200 bg-emerald-50/60 p-4 text-sm font-medium leading-relaxed text-emerald-900 dark:border-emerald-900 dark:bg-emerald-900/20 dark:text-emerald-200">
             {profile.impact}
           </div>
         </div>
 
         {/* SKILLS CARD */}
-        <div className="rounded-xl border border-stone-300 bg-[#fffaf2] p-6 shadow-sm dark:border-emerald-900 dark:bg-emerald-950/30">
+        <div className="rounded-xl border border-stone-300 bg-[#fffaf2] p-4 shadow-sm sm:p-6 dark:border-emerald-900 dark:bg-emerald-950/30">
 
           {toolGroups.map((group) => (
             <div

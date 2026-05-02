@@ -5,7 +5,7 @@ import { Eyebrow, SectionTitle, sectionClass } from '../ui/Section'
 export function ExperienceSection() {
   return (
     <RevealSection
-      className={`${sectionClass} grid gap-10 lg:grid-cols-[minmax(260px,0.4fr)_minmax(0,0.6fr)]`}
+      className={`${sectionClass} grid gap-8 sm:gap-10 lg:grid-cols-[minmax(260px,0.4fr)_minmax(0,0.6fr)]`}
       id="experience"
     >
       {/* LEFT */}
@@ -15,26 +15,26 @@ export function ExperienceSection() {
           Building real-world systems that deliver measurable results.
         </SectionTitle>
 
-        <p className="mt-4 text-sm text-stone-600 dark:text-stone-300">
+        <p className="mt-3 text-sm leading-relaxed text-stone-600 sm:mt-4 dark:text-stone-300">
           From internship learning to shipping production-grade platforms,
           my focus has been on solving business problems with scalable systems.
         </p>
       </div>
 
       {/* RIGHT */}
-      <StaggerContainer className="relative grid gap-6">
+      <StaggerContainer className="relative grid gap-4 sm:gap-6">
 
         {/* timeline line */}
         <div className="absolute left-2 top-0 h-full w-[2px] bg-stone-300 dark:bg-emerald-900"></div>
 
-        {experience.map((item, index) => (
+        {experience.map((item) => (
           <MotionCard
             key={`${item.period}-${item.company}`}
-            className="relative ml-6 rounded-xl border border-stone-300 bg-[#fffaf2] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-emerald-900 dark:bg-emerald-950/30"
+            className="relative ml-6 min-w-0 rounded-xl border border-stone-300 bg-[#fffaf2] p-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-6 dark:border-emerald-900 dark:bg-emerald-950/30"
           >
 
             {/* timeline dot */}
-            <span className="absolute -left-[30px] top-6 h-4 w-4 rounded-full border-2 border-white bg-emerald-600 shadow-md"></span>
+            <span className="absolute -left-[30px] top-5 h-4 w-4 rounded-full border-2 border-white bg-emerald-600 shadow-md sm:top-6"></span>
 
             {/* PERIOD */}
             <span className="text-xs font-bold uppercase tracking-wide text-emerald-700 dark:text-emerald-300">
@@ -42,7 +42,7 @@ export function ExperienceSection() {
             </span>
 
             {/* ROLE */}
-            <h3 className="mt-2 text-xl font-bold text-stone-950 dark:text-stone-50">
+            <h3 className="mt-2 text-lg font-bold leading-snug text-stone-950 sm:text-xl dark:text-stone-50">
               {item.role}
             </h3>
 

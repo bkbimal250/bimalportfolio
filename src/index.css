@@ -26,6 +26,7 @@
   body {
     min-width: 320px;
     margin: 0;
+    overflow-x: hidden;
     background:
       linear-gradient(90deg, rgba(32, 76, 80, 0.08) 1px, transparent 1px),
       linear-gradient(rgba(32, 76, 80, 0.06) 1px, transparent 1px), #f7f4ee;
@@ -41,6 +42,7 @@
     width: min(1440px, 100%);
     min-height: 100svh;
     margin: 0 auto;
+    overflow-x: hidden;
     border-inline: 1px solid rgba(214, 201, 184, 0.9);
     background: color-mix(in srgb, #f7f4ee 92%, white);
   }

@@ -3,16 +3,16 @@ import { Icon } from '../ui/Icon'
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-20 grid grid-cols-[1fr_auto] items-center gap-6 border-b border-stone-300/80 bg-[#f7f4ee]/90 px-5 py-4 backdrop-blur-xl md:px-10 lg:grid-cols-[1fr_auto_1fr] lg:px-16 dark:border-emerald-950 dark:bg-[#111512]/90">
+    <header className="sticky top-0 z-20 grid grid-cols-[1fr_auto] items-center gap-3 border-b border-stone-300/80 bg-[#f7f4ee]/90 px-4 py-3 backdrop-blur-xl sm:gap-6 sm:px-6 md:px-10 lg:grid-cols-[1fr_auto_1fr] lg:px-16 dark:border-emerald-950 dark:bg-[#111512]/90">
       <a
-        className="inline-flex items-center gap-3 text-stone-950 no-underline dark:text-stone-50"
+        className="inline-flex min-w-0 items-center gap-2 text-stone-950 no-underline sm:gap-3 dark:text-stone-50"
         href="#top"
         aria-label={`${profile.name} home`}
       >
-        <span className="grid h-10 w-10 place-items-center rounded-lg border border-stone-400 bg-[#fffaf2] font-black dark:border-emerald-800 dark:bg-emerald-950/30">
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg border border-stone-400 bg-[#fffaf2] font-black dark:border-emerald-800 dark:bg-emerald-950/30">
           {profile.initials}
         </span>
-        <strong className="hidden text-sm tracking-normal sm:block">
+        <strong className="hidden truncate text-sm tracking-normal sm:block">
           {profile.name}
         </strong>
       </a>
@@ -33,7 +33,7 @@ export function SiteHeader() {
       </nav>
 
       <a
-        className="inline-flex min-h-10 items-center justify-self-end rounded-md border border-stone-400 bg-[#fffaf2] px-3.5 font-extrabold text-stone-950 no-underline transition hover:-translate-y-0.5 dark:border-emerald-800 dark:bg-emerald-950/30 dark:text-stone-50"
+        className="inline-flex min-h-11 items-center justify-self-end rounded-md border border-stone-400 bg-[#fffaf2] px-3 text-sm font-extrabold text-stone-950 no-underline transition hover:-translate-y-0.5 sm:px-3.5 sm:text-base dark:border-emerald-800 dark:bg-emerald-950/30 dark:text-stone-50"
         href={`mailto:${profile.email}`}
       >
         <Icon name="mail" />
