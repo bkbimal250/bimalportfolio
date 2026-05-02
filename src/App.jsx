@@ -6,7 +6,7 @@ import { ProjectsSection } from './Components/sections/ProjectsSection'
 import { ServicesSection } from './Components/sections/ServicesSection'
 import { SkillsSection } from './Components/sections/SkillsSection'
 import { SiteHeader } from './Components/sections/SiteHeader'
-import { StatsSection } from './Components/sections/StatsSection'
+// import { StatsSection } from './Components/sections/StatsSection'
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <SiteHeader />
       <main id="top">
         <HeroSection />
-        <StatsSection />
+        {/* <StatsSection /> */}
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />

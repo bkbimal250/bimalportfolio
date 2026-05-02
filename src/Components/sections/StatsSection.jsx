@@ -2,6 +2,7 @@ import { stats } from '../../data/portfolio'
 import { RevealSection, StaggerContainer, StaggerItem } from '../ui/Motion'
 
 export function StatsSection() {
+
   return (
     <RevealSection
       className="grid border-b border-stone-300/80 md:grid-cols-4 dark:border-emerald-950"
