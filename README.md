@@ -7,7 +7,7 @@ Built with **React, Vite, and Tailwind CSS**, this portfolio highlights my work 
 ---
 
 ## 🌐 Live Demo
-👉 https://bkbimalportfolio.netlify.app
+👉 https://bimaldeveloper.netlify.app/
 
 ---
 
